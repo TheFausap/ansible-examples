@@ -5,8 +5,6 @@
 mongo1 mongod_port=2700
 mongo2 mongod_port=2701
 mongo3 mongod_port=2702
-mongos1 mongod_port=2800
-mongos2 mongod_port=2801
 
 #The list of servers where replication should happen, by default include all servers
 [replication_servers]
