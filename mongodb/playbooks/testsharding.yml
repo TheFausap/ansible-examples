@@ -5,7 +5,7 @@
   remote_user: root
   tasks:
    - name: Create a new database and user
-     mongodb_user: login_user=admin login_password= "{{ mongo_admin_pass }}" login_port="{{ mongos_port }}" database=test user=admin password="{{ mongo_admin_pass }}" state=present
+     mongodb_user: login_user=admin login_password="{{ mongo_admin_pass }}" login_port="{{ mongos_port }}" database=test user=admin password="{{ mongo_admin_pass }}" state=present
 
    - name: Pause for the user to get created and replicated
      pause: minutes=3
